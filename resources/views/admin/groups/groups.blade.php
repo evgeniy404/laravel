@@ -1,5 +1,6 @@
 @extends('admin.main')
 @section('content')
+@if (count($groups) > 0)
 <table>
 <tr>
 <td>id</td>
@@ -22,6 +23,9 @@
 </tr>
 @endforeach
 </table>
+@else
+<div>Нет групп</div>
+@endif
 <div>
     <a href="/adminzone/groups/create">Добавить группу</a>
 </div>

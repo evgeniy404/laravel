@@ -1,5 +1,7 @@
 @extends('admin.main')
 @section('content')
+
+@if (count($manufacturers) > 0)
 <table>
 <tr>
 <td>id</td>
@@ -23,6 +25,9 @@
 </tr>
 @endforeach
 </table>
+@else
+<div>Нет производителей</div>
+@endif
 <div>
     <a href="/adminzone/manufacturers/create">Добавить производителя</a>
 </div>

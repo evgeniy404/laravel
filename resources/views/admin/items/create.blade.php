@@ -8,9 +8,7 @@
 <select name="group_id">
     <option value="">Выбрать</option>
 @foreach($categories as $category)
-
-<option value="{{$category->id}}">{{$category->title}}</option>
-
+    <option value="{{$category->id}}">{{$category->title}}</option>
 @endforeach
 </select>
 <br>
@@ -18,10 +16,8 @@
 
 <select name="manufacturer_id">
     <option value="">Выбрать</option>
-@foreach($manufacturers as $manufacturer)
-
-<option value="{{$manufacturer->id}}">{{$manufacturer->title}}</option>
-
+    @foreach($manufacturers as $manufacturer)
+        <option value="{{$manufacturer->id}}">{{$manufacturer->title}}</option>
 @endforeach
 </select><br>
 Вес<br>
